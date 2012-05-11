@@ -1,5 +1,5 @@
 ---
-title: Index Row Information
+Index Row Information
 ---
 
 # Index Rows
