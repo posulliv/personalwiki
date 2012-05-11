@@ -34,7 +34,9 @@ employees=>
 
 means an index row will be found by the index lookup with a key that looks like:
 
+```console
 (long)38623,(long)253406,(long)1025108
+```
 
 the last 2 segments of this key is a hKey that can be used as input to the 
 ancestor lookup operator.
