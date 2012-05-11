@@ -1,7 +1,3 @@
----
-title: Index Row Information
----
-
 # Index Rows
 
 salaries table in employees dataset
