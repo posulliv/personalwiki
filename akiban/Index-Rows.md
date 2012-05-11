@@ -3,17 +3,21 @@
 salaries table in employees dataset
 employee is parent of salaries table
 
-index on salary column in that table
+There is index on the salary column in the salaries table.
 
-keys for that index look like:
+The keys for that index look like:
 
+```console
  salary, emp_no, from_date
+```
 
-in general, index consists of
+In general, an index key consists of:
  - columns declared in the index
  - hKey columns that were declared as part of index
 
-so now an execution plan that looks like:
+For regular table indexes, the index row's value is not used for anything. For group indexes however, an index row's value contains a bitmap that identifies which rows are null.  
+
+Thus, an execution plan that looks like:
 
 ```console
 employees=> explain select to_date from salaries where salary > 38623;
