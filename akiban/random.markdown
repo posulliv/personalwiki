@@ -15,7 +15,7 @@ keys for that index look like:
 
 in general, index consists of
  - columns declared in the index
- - hKey columns that were declared as part of index
+ - hKey columns that were not declared as part of index
 
 so now an execution plan that looks like:
 
