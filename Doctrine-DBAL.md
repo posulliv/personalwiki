@@ -6,10 +6,10 @@ DBAL can be used independently of the ORM.
 
 To implement support for Akiban Server, the following interfaces and abstract classes need to be implemented:
 
- * \Doctrine\DBAL\Driver\Driver
- * \Doctrine\DBAL\Driver\Statement
- * \Doctrine\DBAL\Platforms\AbstractPlatform
- * \Doctrine\DBAL\Schema\AbstractSchemaManager
+ * \Doctrine\DBAL\Driver\Driver (interface)
+ * \Doctrine\DBAL\Driver\Statement (class - does not appear to be interface or abstract class?)
+ * \Doctrine\DBAL\Platforms\AbstractPlatform (abstract class)
+ * \Doctrine\DBAL\Schema\AbstractSchemaManager (abstract class)
 
 The DriverManager class in `lib/Doctrine/DBAL/DriverManager.php` needs to know about Akiban Server. 
 
