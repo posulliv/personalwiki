@@ -15,4 +15,12 @@ The DriverManager class in `lib/Doctrine/DBAL/DriverManager.php` needs to know a
 
 # PostgreSQL Implementation
 
+The PostgreSQL implementation is based on PDO. Thus the `PDOStatement` and `PDOConnection` classes are used with PostgreSQL. The only interface implemented in the PostgreSQL driver is the `Driver` interface. That implementation is minimal. The only interesting function is the function that constructs the PDO DSN.
+
 # Oracle Implementation
+
+Oracle has 2 implementations. The first implementation is based on PDO and as is the case with the PostgreSQL implementation, on the the `Driver` interface is implemented. 
+
+The other Oracle implementation uses the [Oracle Call Interface](http://www.oracle.com/technetwork/database/features/oci/index.html). Since this implementation does not use PDO, it needs to implement all 4 of the required interfaces and abstract classes.
+
+Thus, the Oracle implementation is a good implementation to learn from for performing the Akiban work.
