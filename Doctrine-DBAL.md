@@ -2,4 +2,17 @@
 
 DBAL can be used independently of the ORM.
 
-# Installing on OSX
+# Akiban Implementation
+
+To implement support for Akiban Server, the following interfaces and abstract classes need to be implemented:
+
+ * \Doctrine\DBAL\Driver\Driver
+ * \Doctrine\DBAL\Driver\Statement
+ * \Doctrine\DBAL\Platforms\AbstractPlatform
+ * \Doctrine\DBAL\Schema\AbstractSchemaManager
+
+The DriverManager class in `lib/Doctrine/DBAL/DriverManager.php` needs to know about Akiban Server. 
+
+# PostgreSQL Implementation
+
+# Oracle Implementation
